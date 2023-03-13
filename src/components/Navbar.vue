@@ -41,7 +41,7 @@
 
 </template>
 
-<style>
+<style scoped>
     .navbar-section{
         background-color: #DE6E70;
     }
@@ -64,7 +64,7 @@
     }
     
     .nav-list-style{
-        font-size: 14px;
+        font-size: 17px;
         color: white;
         font-weight: 600;
     }
@@ -76,8 +76,8 @@
         color: white;
         background-color:#E9D758;
         border-radius: 50px;
-        padding: 10px 25px;
-        font-size: 14px;
+        padding: 15px 35px;
+        font-size: 17px;
         font-weight: 600;
         text-transform: uppercase;
         line-height: 33px;
