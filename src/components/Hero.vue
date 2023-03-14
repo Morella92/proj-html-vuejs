@@ -30,13 +30,26 @@
 
 <style scoped>
     .hero-section{
-        background-color: #DE6E70;
-        /* background-image: url('../../public/img/theme_slider2_bg-1.jpg');
-        background-size: cover;
-        filter: grayscale(100%) brightness(100%); */
+        background-color: rgba(224, 112, 114, 0.9);
+        position: relative;
         color: white;
         text-align: center;
+        overflow: hidden;
     }
+
+    .hero-section::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../../public/img/theme_slider2_bg-1.jpg');
+        background-size: cover;
+        opacity: 0.1;
+    }
+
 
     .hero-title{
         font-size: 48px;

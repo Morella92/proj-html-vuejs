@@ -40,7 +40,6 @@
                 </div>
                 <div class="col-hat">
                     <img class="hat-img" src="../../public/img/Graduation-Illustration.png" alt="">
-                    <!-- <img class="hat-bg" src="../../public/img/home-background.png" alt=""> -->
                 </div>
             </div>
 
@@ -114,7 +113,7 @@
     }
 
     .courses-button{
-        background-color: #e9d758;
+        background-color: #E9D758;
         color: white;
         font-weight: 600;
         font-size: 17px;
@@ -128,7 +127,6 @@
 
     .hat-img{
         width: 470px;
-        /* background-image: url('../../public/img/home-background.png'); */
     }
 
     .faculty-choice{
@@ -154,7 +152,7 @@
 
     .faculty-name{
         text-align: center;
-        color: #E56768;
+        color: #DE6E70;
         font-size: 17px;
         font-weight: 600;
         margin-bottom: 10px;
@@ -166,7 +164,7 @@
     }
 
     .law-button{
-        background-color: #E56768;
+        background-color: #DE6E70;
         color: white;
         font-size: 17px;
         font-weight: 600;
@@ -175,6 +173,6 @@
     }
 
     .law-button:hover{
-        background-color: #e9d758;
+        background-color: #E9D758;
     }
 </style>

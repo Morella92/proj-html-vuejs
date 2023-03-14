@@ -43,7 +43,7 @@
 
 <style scoped>
     .navbar-section{
-        background-color: #DE6E70;
+        background-color: rgba(224, 112, 114, 0.9);
     }
 
     .flex-rules{
