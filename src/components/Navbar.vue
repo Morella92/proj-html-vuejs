@@ -14,7 +14,7 @@
                     'Purchase'
                 ]
             }
-        }
+        },
     }
 </script>
 
@@ -69,6 +69,10 @@
         font-weight: 600;
     }
 
+    .nav-list-style:hover{
+        color: #E9D758;
+    }
+
     .margin-rule{
         margin-right: 12px;
     }
@@ -81,5 +85,10 @@
         font-weight: 600;
         text-transform: uppercase;
         line-height: 33px;
+    }
+
+    .nav-button:hover{
+        background-color: white;
+        color: #DE6E70;
     }
 </style>

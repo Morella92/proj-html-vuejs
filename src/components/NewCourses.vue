@@ -39,10 +39,47 @@
                             <i class="fa-regular fa-money-bill-1"></i>
                             <span class="new-courses-span">Price: <strong>Free</strong></span>
                         </p>
-                        <button>View Course</button>
+                        <button class="new-courses-button">
+                            <i class="fa-solid fa-eye"></i>
+                            View Course
+                        </button>
                     </a>
                 </li>
             </ul>
+
+            <div class="row-exam">
+                <div class="col-exam">
+                    <img class="exam-img" src="../../public/img/Exam-icon.png" alt="">
+                    <h2 class="exam-title">
+                        The most efficient <br>examination method
+                    </h2>
+                    <p class="exam-p">
+                        EduPrime has gathered teachers from around the globe to <br> brainstorm in order to facilitate the evaluation of our students. 
+                        <br> Every teacher from our university has an influence on how <br> students are evaluated at his/her subject.
+                    </p>
+                    <button class="exam-button">Discover the Method</button>
+                </div>
+                <div class="col">
+                    <img class="exam-illustration" src="../../public/img/Exam-Illustration.png" alt="">
+                </div>
+            </div>
+
+            <div class="row-exam">
+                <div class="col">
+                    <img class="exam-illustration" src="../../public/img/Girl-Illustration.png" alt="">
+                </div>
+                <div class="col-exam">
+                    <img class="exam-img" src="../../public/img/Exam-icon-1.png" alt="">
+                    <h2 class="exam-title">
+                        Variable fees <br>for international students.
+                    </h2>
+                    <p class="exam-p">
+                        EduPrime has gathered teachers from around the globe to <br> brainstorm in order to facilitate the evaluation of our students. 
+                        <br> Every teacher from our university has an influence on how <br> students are evaluated at his/her subject.
+                    </p>
+                    <button class="exam-button">List of Fees</button>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -71,6 +108,9 @@
         font-size: 14px;
         line-height: 1.5;
         color: #434959;
+        border: 0.5px solid #EAEAEA;
+        box-shadow: 10px 10px 5px #dedede;
+        position: relative;
     }
 
     .new-course-name{
@@ -87,5 +127,61 @@
 
     .new-courses-span{
         margin-left: 5px;
+    }
+
+    .new-courses-button{
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+        background-color: #E56768;
+        padding: 13px 20px;
+        border-radius: 20px;
+        position: absolute;
+        left: 50px;
+        bottom: -15px;
+    }
+
+    .new-courses-button:hover, .exam-button:hover{
+        background-color: #E9D758;
+    }
+
+    .row-exam{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    .col-exam{
+        margin-top: 55px;
+    }
+
+    .exam-title{
+        font-size: 48px;
+        color: #3d404f;
+    }
+
+    .exam-p{
+        font-size: 16px;
+        color: #8b8b8a;
+        line-height: 28px;
+        margin-top: 22px;
+        margin-bottom: 22px;
+    }
+    .exam-img{
+        width: 39px;
+    }
+
+    .exam-button{
+        background-color: #e56768;
+        color: white;
+        padding: 23px 45px;
+        border-radius: 35px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .exam-illustration{
+        width: 450px;
+        margin-top: 55px;
     }
 </style>

@@ -38,8 +38,9 @@
                     </p>
                     <button class="courses-button">Browse through courses</button>
                 </div>
-                <div class="col">
+                <div class="col-hat">
                     <img class="hat-img" src="../../public/img/Graduation-Illustration.png" alt="">
+                    <!-- <img class="hat-bg" src="../../public/img/home-background.png" alt=""> -->
                 </div>
             </div>
 
@@ -52,8 +53,9 @@
             </div>
             
             
-            <ul class="row">
-                <li v-for="(name, index) in facultyName" :key="index" class="faculty-list">
+            <ul class="row shadow">
+                <li v-for="(name, index) in facultyName" :key="index" 
+                :class="name === 'Law faculty' ? 'faculty-list-pink' : ''" class="faculty-list">
                     <a href="#">
                         <img :src="facultyImage[index]" class="faculty-images">
                         <h4 class="faculty-name">{{ name }}</h4>
@@ -119,9 +121,14 @@
         padding: 23px 45px;
         border-radius: 50px;
     }
+
+    .courses-button:hover{
+        background-color: #DD3333;
+    }
+
     .hat-img{
         width: 470px;
-        background-image: url('../../public/img/home-background.png');
+        /* background-image: url('../../public/img/home-background.png'); */
     }
 
     .faculty-choice{
@@ -129,9 +136,17 @@
         margin-top: 145px;
     }
 
+    .shadow{
+        box-shadow: 10px 10px 5px #dedede;
+    }
     .faculty-list{
         border: 0.5px solid #EAEAEA;
     }
+
+    /* .faculty-list-pink{
+        filter: hue-rotate(0deg);
+        background-color: #E56768;
+    } */
     .faculty-images{
         width: 95px;
         margin: 35px 68px;
@@ -142,6 +157,7 @@
         color: #E56768;
         font-size: 17px;
         font-weight: 600;
+        margin-bottom: 10px;
     }
 
     .law-image{
@@ -156,5 +172,9 @@
         font-weight: 600;
         padding: 23px 45px;
         border-radius: 50px;
+    }
+
+    .law-button:hover{
+        background-color: #e9d758;
     }
 </style>

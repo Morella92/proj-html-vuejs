@@ -193,6 +193,11 @@
         font-weight: 600;
         position: absolute;
         left: 110px;
+        box-shadow: 1px 1px 1px #dedede;
+    }
+
+    .event-button:hover{
+        background-color: #e9d758;
     }
 
     .all-events{
@@ -205,7 +210,12 @@
         margin: 55px 0;
     }
 
+    .all-events:hover{
+        background-color: #E56768;
+    }
+
     .university-wave{
         margin: -88px;
+        width: 1600px;
     }
 </style>

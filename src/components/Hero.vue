@@ -63,8 +63,17 @@
         margin-right: 36px;
     }
 
+    .courses-button:hover{
+        background-color: white;
+        color: #DE6E70;
+    }
     .apply-button{
         color: #DE6E70;
+    }
+
+    .apply-button:hover{
+        background-color: #E9D758;
+        color: white;
     }
 
     .hero-wave{

@@ -1,9 +1,12 @@
 <script>
-  import Navbar from './components/Navbar.vue'
-  import Hero from './components/Hero.vue'
+  import Navbar from './components/Navbar.vue';
+  import Hero from './components/Hero.vue';
   import Faculty from './components/Faculty.vue';
   import University from './components/University.vue';
   import NewCourses from './components/NewCourses.vue';
+  import Subscribe from './components/Subscribe.vue';
+  import Partners from './components/Partners.vue';
+  import Footer from './components/Footer.vue';
 
   export default {
     components:{
@@ -11,7 +14,10 @@
       Hero,
       Faculty,
       University,
-      NewCourses
+      NewCourses,
+      Subscribe,
+      Partners,
+      Footer
     }
   }
 </script>
@@ -22,6 +28,9 @@
   <Faculty/>
   <University/>
   <NewCourses/>
+  <Subscribe/>
+  <Partners/>
+  <Footer/>
   
 </template>
 
