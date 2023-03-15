@@ -87,10 +87,11 @@
     </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+    @use '../styles/partials/variables' as *;
     .footer-section{
-        background-color: #E56768;
-        color: white;
+        background-color: $bg-primary;
+        color: $tertiary;
         margin-top: -4px;
     }
 
@@ -116,7 +117,7 @@
     }
 
     .footer-icons{
-        border: 2px solid #E9D758;
+        border: 2px solid $secondary;
         border-radius: 50%;
         padding: 10px 15px;
         width: 50px;
@@ -126,7 +127,7 @@
     }
 
     .footer-icons:hover{
-        background-color: #E9D758;
+        background-color: $secondary;
     }
     .footer-titles{
         margin-bottom: 18px;
@@ -139,7 +140,7 @@
     }
 
     .list-items:hover{
-        color: #E9D758;
+        color: $secondary;
     }
     .search-input{
         border-radius: 35px;
@@ -157,14 +158,14 @@
         right: 70px;
         height: 70px;
         padding: 21px 28px;
-        background: #E9D758;
+        background: $secondary;
         border-radius: 50%;
-        color: white;
+        color: $tertiary;
         font-size: 20px;
     }
 
     .button-footer:hover{
-        background-color: #E56768;
+        background-color: $bg-primary;
     }
 
     .col-info{
@@ -181,9 +182,9 @@
     }
 
     .button-style{
-        background-color: #E56768;
-        color: white;
-        border: 1px solid white;
+        background-color: $bg-primary;
+        color: $tertiary;
+        border: 1px solid $tertiary;
         border-radius: 50px;
         font-size: 12px;
         text-transform: uppercase;
@@ -191,10 +192,10 @@
     }
 
     .button-style:hover{
-        background-color: #E9D758;
+        background-color: $secondary;
     }
     .privacy{
-        color: #E9D758;
+        color: $secondary;
         font-size: 16px;
         font-weight: 300;
     }

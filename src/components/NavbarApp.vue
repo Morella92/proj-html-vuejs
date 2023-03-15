@@ -12,7 +12,7 @@
                     'Pages',
                     'Contact',
                     'Purchase'
-                ]
+                ],
             }
         },
     }
@@ -41,7 +41,8 @@
 
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+    @use '../styles/partials/variables' as *;
     .navbar-section{
         background-color: rgba(224, 112, 114, 0.9);
     }
@@ -65,20 +66,20 @@
     
     .nav-list-style{
         font-size: 17px;
-        color: white;
+        color: $tertiary;
         font-weight: 600;
     }
 
     .nav-list-style:hover{
-        color: #E9D758;
+        color: $secondary;
     }
 
     .margin-rule{
         margin-right: 12px;
     }
     .nav-button{
-        color: white;
-        background-color:#E9D758;
+        color: $tertiary;
+        background-color: $secondary;
         border-radius: 50px;
         padding: 15px 35px;
         font-size: 17px;
@@ -88,7 +89,7 @@
     }
 
     .nav-button:hover{
-        background-color: white;
-        color: #DE6E70;
+        background-color: $tertiary;
+        color: $bg-primary;
     }
 </style>

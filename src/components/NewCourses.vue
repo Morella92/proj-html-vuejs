@@ -85,14 +85,15 @@
 
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+    @use '../styles/partials/variables' as *;
     .new-courses-section{
         margin-top: 78px;
     }
 
     .new-courses-title{
         font-size: 48px;
-        color: #3d404f;
+        color: $text-color;
         margin-bottom: 62px;
     }
 
@@ -107,7 +108,7 @@
         text-align: center;
         font-size: 14px;
         line-height: 1.5;
-        color: #434959;
+        color: $text-color;
         border: 0.5px solid #EAEAEA;
         box-shadow: 10px 10px 5px #dedede;
         position: relative;
@@ -132,8 +133,8 @@
     .new-courses-button{
         font-size: 14px;
         font-weight: 600;
-        color: white;
-        background-color: #E56768;
+        color: $tertiary;
+        background-color: $bg-primary;
         padding: 13px 20px;
         border-radius: 20px;
         position: absolute;
@@ -142,7 +143,7 @@
     }
 
     .new-courses-button:hover, .exam-button:hover{
-        background-color: #E9D758;
+        background-color: $secondary;
     }
 
     .row-exam{
@@ -158,7 +159,7 @@
 
     .exam-title{
         font-size: 48px;
-        color: #3d404f;
+        color: $text-color;
     }
 
     .exam-p{
@@ -173,8 +174,8 @@
     }
 
     .exam-button{
-        background-color: #e56768;
-        color: white;
+        background-color: $bg-primary;
+        color: $tertiary;
         padding: 23px 45px;
         border-radius: 35px;
         font-size: 14px;

@@ -22,9 +22,10 @@
     </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+    @use '../styles/partials/variables' as *;
     .subscribe-section{
-        background-color: #E56768;
+        background-color: $bg-primary;
         margin-top: 45px;
     }
 
@@ -34,7 +35,7 @@
         align-items: center;
     }
     .subscribe-title{
-        color: white;
+        color: $tertiary;
         font-size: 35px;
         font-weight: 600;
         padding: 43px 0;
@@ -55,13 +56,13 @@
         right: 73px;
         height: 70px;
         padding: 21px 28px;
-        background: #E9D758;
+        background: $secondary;
         border-radius: 50%;
-        color: white;
+        color: $tertiary;
         font-size: 20px;
     }
 
     .button-subscribe:hover{
-        background-color: #E56768;
+        background-color: $bg-primary;
     }
 </style>

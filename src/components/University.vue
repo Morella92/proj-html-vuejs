@@ -105,9 +105,10 @@
 
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+    @use '../styles/partials/variables' as *;
     .university-section{
-        background-color: #E56768;
+        background-color: $bg-primary;
         margin-top: -5px;
     }
 
@@ -125,7 +126,7 @@
     .section-title{
         font-size: 48px;
         font-weight: 600;
-        color: white;
+        color: $tertiary;
         margin: 20px 0 10px;
     }
 
@@ -137,7 +138,7 @@
     }
 
     .info-title{
-        color: white;
+        color: $tertiary;
         font-size: 18px;
         font-weight: 600;
         margin-top: 50px;
@@ -147,7 +148,7 @@
 
     .info-p{
         font-size: 16px;
-        color: white;
+        color: $tertiary;
         text-align: center;
     }
 
@@ -157,8 +158,8 @@
 
     .col-event{
         margin-top: 55px;
-        background-color: white;
-        color: #3D404F;
+        background-color: $tertiary;
+        color: $text-color;
         border-radius: 14px;
         padding: 15px 30px;
         text-align: center;
@@ -185,8 +186,8 @@
     }
 
     .event-button{
-        background-color: #E56768;
-        color: white;
+        background-color: $bg-primary;
+        color: $tertiary;
         padding: 8px 16px;
         border-radius: 20px;
         font-size: 14px;
@@ -197,12 +198,12 @@
     }
 
     .event-button:hover{
-        background-color: #e9d758;
+        background-color: $secondary;
     }
 
     .all-events{
-        background-color: #e9d758;
-        color: white;
+        background-color: $secondary;
+        color: $tertiary;
         font-weight: 600;
         font-size: 14px;
         padding: 23px 45px;
@@ -211,7 +212,7 @@
     }
 
     .all-events:hover{
-        background-color: #E56768;
+        background-color: $bg-primary;
     }
 
     .university-wave{

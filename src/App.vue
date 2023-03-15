@@ -37,7 +37,8 @@
   
 </template>
 
-<style>
+<style lang="scss">
+  @use '../src/styles/partials/variables' as *;
 
   section{
     overflow-x: hidden;

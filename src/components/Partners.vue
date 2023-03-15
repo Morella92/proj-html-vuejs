@@ -43,7 +43,8 @@
     </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+    @use '../styles/partials/variables' as *;
     .partners-section{
         margin-top: 33px;
     }
@@ -51,13 +52,13 @@
     .partners-title{
         font-size: 48px;
         font-weight: 600;
-        color: #3d404f;
+        color: $text-color;
         text-align: center;
     }
 
     .partners-p{
         font-size: 16px;
-        color: #3D404F;
+        color: $text-color;
         text-align: center;
         margin: 28px 0;
     }

@@ -83,7 +83,8 @@
     </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+    @use '../styles/partials/variables' as *;
     .row{
         display: flex;
         align-items: center;
@@ -106,15 +107,15 @@
 
     .courses-p{
         font-size: 16px;
-        color: #3D404F;
+        color: $text-color;
         line-height: 30px;
         margin: 40px 0;
         margin-right: 40px;
     }
 
     .courses-button{
-        background-color: #E9D758;
-        color: white;
+        background-color: $secondary;
+        color: $tertiary;
         font-weight: 600;
         font-size: 17px;
         padding: 23px 45px;
@@ -152,7 +153,7 @@
 
     .faculty-name{
         text-align: center;
-        color: #DE6E70;
+        color: $bg-primary;
         font-size: 17px;
         font-weight: 600;
         margin-bottom: 10px;
@@ -164,8 +165,8 @@
     }
 
     .law-button{
-        background-color: #DE6E70;
-        color: white;
+        background-color: $bg-primary;
+        color: $tertiary;
         font-size: 17px;
         font-weight: 600;
         padding: 23px 45px;
@@ -173,6 +174,6 @@
     }
 
     .law-button:hover{
-        background-color: #E9D758;
+        background-color: $secondary;
     }
 </style>

@@ -28,11 +28,12 @@
 
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+    @use '../styles/partials/variables' as *;
     .hero-section{
         background-color: rgba(224, 112, 114, 0.9);
         position: relative;
-        color: white;
+        color: $tertiary;
         text-align: center;
         overflow: hidden;
     }
@@ -71,22 +72,22 @@
     }
 
     .courses-button{
-        background-color:#E9D758;
-        color: white;
+        background-color:$secondary;
+        color: $tertiary;
         margin-right: 36px;
     }
 
     .courses-button:hover{
-        background-color: white;
-        color: #DE6E70;
+        background-color: $tertiary;
+        color: $bg-primary;
     }
     .apply-button{
-        color: #DE6E70;
+        color: $bg-primary;
     }
 
     .apply-button:hover{
-        background-color: #E9D758;
-        color: white;
+        background-color: $secondary;
+        color: $tertiary;
     }
 
     .hero-wave{
