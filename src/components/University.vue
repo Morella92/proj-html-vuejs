@@ -50,7 +50,7 @@
                 <h2 class="section-title">Upcoming Events</h2>
             </div>
 
-            <div class="row">
+            <div class="row event">
                 <div class="col-event">
                     <h3 class="event-title">Coaching Sessions</h3>
                     <p class="event-date">
@@ -110,6 +110,7 @@
     .university-section{
         background-color: $bg-primary;
         margin-top: -5px;
+        overflow: hidden;
     }
 
     .row-column{
@@ -216,7 +217,24 @@
     }
 
     .university-wave{
-        margin: -88px;
+        margin: -100px;
         width: 1600px;
     }
+
+    @media (max-width: 991px){
+        .university-section{
+            padding: 0 20px;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        .event{
+            flex-direction: column;
+        }
+
+        .event-button{
+            left: 280px;
+        }
+    }
+
 </style>

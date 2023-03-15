@@ -36,6 +36,10 @@
             <button class="nav-button">
                 View Courses
             </button>
+
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
     </section>
 
@@ -91,5 +95,51 @@
     .nav-button:hover{
         background-color: $tertiary;
         color: $bg-primary;
+    }
+
+    .menu-icon{
+        font-size: 40px;
+        border: 2px solid black;
+        padding: 5px 10px;
+        background-color: $tertiary;
+        display: none;
+    }
+
+    @media screen and (max-width: 991px) {
+        .flex-rules {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo {
+            margin-top: 20px;
+        }
+
+        .list-flex {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav-button {
+            margin-top: 20px;
+        }
+    }
+
+    @media screen and (max-width:767px){
+
+        .navbar-section{
+            background-color: #3D404F;
+        }
+        .list-flex, .nav-button{
+            display: none;
+        }
+
+        .menu-icon{
+            display: block;
+        }
+
+        .flex-rules{
+            flex-direction: row;
+        }
     }
 </style>

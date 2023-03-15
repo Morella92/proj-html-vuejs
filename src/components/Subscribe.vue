@@ -65,4 +65,28 @@
     .button-subscribe:hover{
         background-color: $bg-primary;
     }
+
+    @media screen and (max-width: 991px) {
+        .button-subscribe{
+            right: 20px;
+        }
+
+        .col{
+            padding: 0 20px;
+        }
+    }
+
+    @media screen and (max-width: 767px){
+        .row{
+            flex-direction: column;
+        }
+
+        .button-subscribe{
+            right: 130px;
+        }
+
+        .col{
+            margin-bottom: 20px;
+        }
+    }
 </style>

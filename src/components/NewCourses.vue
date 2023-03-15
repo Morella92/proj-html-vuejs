@@ -185,4 +185,35 @@
         width: 450px;
         margin-top: 55px;
     }
+
+    @media (max-width: 991px) {
+
+        .new-courses-section{
+            padding: 0 20px;
+        }
+        .row{
+            flex-wrap: wrap;
+        }
+
+        .new-course-list{
+            flex-basis: calc(100%/ 2);
+            margin-bottom: 25px;
+        }
+
+        .new-courses-button{
+            left: 200px;
+        }
+    }
+    @media (max-width: 767px){
+        .new-course-list{
+            flex-basis: 100%;
+        }
+        .new-courses-button{
+            left: 300px;
+        }
+
+        .row-exam{
+            flex-direction: column;
+        }
+    }
 </style>

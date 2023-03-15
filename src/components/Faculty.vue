@@ -53,8 +53,7 @@
             
             
             <ul class="row shadow">
-                <li v-for="(name, index) in facultyName" :key="index" 
-                :class="name === 'Law faculty' ? 'faculty-list-pink' : ''" class="faculty-list">
+                <li v-for="(name, index) in facultyName" :key="index" class="faculty-list">
                     <a href="#">
                         <img :src="facultyImage[index]" class="faculty-images">
                         <h4 class="faculty-name">{{ name }}</h4>
@@ -142,10 +141,6 @@
         border: 0.5px solid #EAEAEA;
     }
 
-    /* .faculty-list-pink{
-        filter: hue-rotate(0deg);
-        background-color: #E56768;
-    } */
     .faculty-images{
         width: 95px;
         margin: 35px 68px;
@@ -175,5 +170,21 @@
 
     .law-button:hover{
         background-color: $secondary;
+    }
+
+    @media screen and (max-width: 991px){
+
+        .faculty-section{
+            padding: 0 20px;
+        }
+        .row {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+  
+        .faculty-list {
+            flex-basis: calc(100% / 2);
+            text-align: center;
+        }
     }
 </style>

@@ -199,4 +199,29 @@
         font-size: 16px;
         font-weight: 300;
     }
+
+    @media screen and (max-width: 991px){
+        .row-footer{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .col{
+            padding: 0 20px;
+        }
+
+        .col-info{
+            align-items: flex-start;
+        }
+
+        .button-footer{
+            right: 680px;
+        }
+    }
+
+    @media screen and (max-width: 767px){
+        .button-footer{
+            right: 450px;
+        }
+    }
 </style>
